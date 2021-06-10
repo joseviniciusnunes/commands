@@ -16,3 +16,8 @@ adb -s emulator-5554 logcat -s ReactNative:V ReactNativeJS:V
 adb start-server
 nohup ./emulator @device_name -no-snapshot-load &
 ``
+
+## Criar banco de dados pelo docker
+``bash
+sudo docker exec ce92fce16244 mysql -u root -proot -e "CREATE SCHEMA teste ;"
+``
