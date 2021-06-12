@@ -24,4 +24,5 @@ sudo docker exec ce92fce16244 mysql -u root -proot -e "CREATE SCHEMA teste ;"
 ## Executar comando sh alpine
 ``bash
 docker exec -it srv-captain--api-perito.1.dwcp0907g7z2hcwnzbctn7een /bin/sh
+``
 
