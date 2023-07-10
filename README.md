@@ -20,6 +20,11 @@ nohup ./emulator @device_name -no-snapshot-load &
 ```bash
 docker run --name mysql8 --restart=always -p 3306:3306 -v mysql8:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root -d mysql:8
 ```
+## Criar mongo
+```bash
+docker run -p 27017:27017 -v mongodbdata:/data/db --name=mongodb mongo:latest
+```
+
 ## Criar banco de dados pelo docker
 ```bash
 sudo docker exec ce92fce16244 mysql -u root -proot -e "CREATE SCHEMA teste ;"
